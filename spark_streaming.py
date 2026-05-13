@@ -1,10 +1,3 @@
-"""
-Wikimedia Kafka → PySpark Structured Streaming
-------------------------------------------------
-Reads from the wikimedia-recentchange Kafka topic,
-parses JSON, enriches, and prints to console for now.
-BigQuery sink comes after we verify this works.
-"""
 import os
 os.environ["HADOOP_HOME"] = r"C:\hadoop"
 os.environ["PATH"] = r"C:\hadoop\bin;" + os.environ["PATH"]
@@ -21,7 +14,7 @@ logging.basicConfig(level=logging.INFO)
 KAFKA_BOOTSTRAP_SERVERS = "host.docker.internal:9092"
 KAFKA_TOPIC = "wikimedia-recentchange"
 
-# Schema for the Wikimedia recent change event
+# Schema for wikimedia recent change event
 SCHEMA = StructType([
     StructField("id", LongType(), True),
     StructField("type", StringType(), True),
@@ -70,7 +63,7 @@ def main():
         .load()
     )
 
-    # Parse JSON
+    # parse json
     parsed = (
         raw
         .select(
@@ -81,7 +74,7 @@ def main():
         .select("offset", "kafka_timestamp", "data.*")
     )
 
-    # Enrich
+    # enrich
     enriched = (
         parsed
         .withColumn("event_time", F.to_timestamp(F.col("timestamp")))
@@ -103,7 +96,6 @@ def main():
         )
     )
 
-    # Print to console for now
     query = (
         enriched.writeStream
         .format("delta")
