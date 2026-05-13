@@ -42,13 +42,13 @@ SCHEMA = StructType([
 
 
 def build_spark():
-    return (
+    packages = "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.3,io.delta:delta-spark_2.12:3.2.0"
+    return(
         SparkSession.builder
         .appName("wikimedia-streaming")
-        .config(
-            "spark.jars.packages",
-            "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.3"
-        )
+        .config("spark.jars.packages", packages)
+        .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension")
+        .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
         .config("spark.sql.shuffle.partitions", "4")
         .getOrCreate()
     )
@@ -106,11 +106,11 @@ def main():
     # Print to console for now
     query = (
         enriched.writeStream
-        .format("console")
-        .option("truncate", False)
-        .option("numRows", 5)
+        .format("delta")
+        .outputMode("append")
+        .option("checkpointLocation", "C:/tmp/checkpoints/wikimedia")
         .trigger(processingTime="10 seconds")
-        .start()
+        .start("C:/tmp/delta/wikimedia_events")
     )
 
     query.awaitTermination()
