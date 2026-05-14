@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_wiki_events
+    description: "Cleaned Wikipedia recent change events from Delta Lake."
+    columns:
+      - name: event_id
+        description: "Unique event ID."
+        tests:
+          - not_null
+      - name: event_type
+        description: "Type of wiki event."
+        tests:
+          - accepted_values:
+              values: ["edit", "new", "categorize", "log"]
+      - name: editor_type
+        description: "Bot or human editor."
+        tests:
+          - accepted_values:
+              values: ["bot", "human"]

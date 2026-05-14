@@ -1,0 +1,30 @@
+[0m12:18:17.322754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028ED6C00430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028ED7EC0430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028ED7EC0220>]}
+
+
+============================== 12:18:17.327357 | 245ea43e-ab33-4a3f-a6d7-5cd0cbfe5a8f ==============================
+[0m12:18:17.327357 [info ] [MainThread]: Running with dbt=1.11.9
+[0m12:18:17.327357 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\chiyo\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt init wikimedia_dbt', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m12:18:17.382349 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\chiyo\.dbt
+[0m12:18:17.390525 [debug] [MainThread]: Starter project path: C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\dbt\include\starter_project
+[0m12:18:17.515628 [info ] [MainThread]: 
+Your new dbt project "wikimedia_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:18:17.515628 [info ] [MainThread]: Setting up your profile.
+[0m12:18:33.810626 [info ] [MainThread]: Profile wikimedia_dbt written to C:\Users\chiyo\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m12:18:33.820759 [debug] [MainThread]: Command `dbt init` succeeded at 12:18:33.810626 after 16.64 seconds
+[0m12:18:33.820759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028ED6C00430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028ED7EC0430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028ED7EC0A60>]}
+[0m12:18:33.820759 [debug] [MainThread]: Flushing usage events
+[0m12:18:34.479667 [debug] [MainThread]: An error was encountered while trying to flush usage events
