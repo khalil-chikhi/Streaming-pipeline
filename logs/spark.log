@@ -1,0 +1,443 @@
+Missing Python executable 'python3', defaulting to 'C:\Users\chiyo\OneDrive\Desktop\streaming\venv\Lib\site-packages\pyspark\bin\..' for SPARK_HOME environment variable. Please install Python or specify the correct Python executable in PYSPARK_DRIVER_PYTHON or PYSPARK_PYTHON environment variable to detect SPARK_HOME safely.
+:: loading settings :: url = jar:file:/C:/Users/chiyo/OneDrive/Desktop/streaming/venv/Lib/site-packages/pyspark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: C:\Users\chiyo\.ivy2\cache
+The jars for the packages stored in: C:\Users\chiyo\.ivy2\jars
+org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+io.delta#delta-spark_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-6c678eda-3432-45cd-8a1f-a2f8c01126d2;1.0
+	confs: [default]
+	found org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.3 in central
+	found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.3 in central
+	found org.apache.kafka#kafka-clients;3.4.1 in central
+	found org.lz4#lz4-java;1.8.0 in central
+	found org.xerial.snappy#snappy-java;1.1.10.5 in central
+	found org.slf4j#slf4j-api;2.0.7 in central
+	found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+	found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+	found commons-logging#commons-logging;1.1.3 in central
+	found com.google.code.findbugs#jsr305;3.0.0 in central
+	found org.apache.commons#commons-pool2;2.11.1 in central
+	found io.delta#delta-spark_2.12;3.2.0 in central
+	found io.delta#delta-storage;3.2.0 in central
+	found org.antlr#antlr4-runtime;4.9.3 in central
+:: resolution report :: resolve 3077ms :: artifacts dl 217ms
+	:: modules in use:
+	com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+	commons-logging#commons-logging;1.1.3 from central in [default]
+	io.delta#delta-spark_2.12;3.2.0 from central in [default]
+	io.delta#delta-storage;3.2.0 from central in [default]
+	org.antlr#antlr4-runtime;4.9.3 from central in [default]
+	org.apache.commons#commons-pool2;2.11.1 from central in [default]
+	org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+	org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+	org.apache.kafka#kafka-clients;3.4.1 from central in [default]
+	org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.3 from central in [default]
+	org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.3 from central in [default]
+	org.lz4#lz4-java;1.8.0 from central in [default]
+	org.slf4j#slf4j-api;2.0.7 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.10.5 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   14  |   0   |   0   |   0   ||   14  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-6c678eda-3432-45cd-8a1f-a2f8c01126d2
+	confs: [default]
+	0 artifacts copied, 14 already retrieved (0kB/64ms)
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+INFO:py4j.clientserver:Error while receiving.
+Traceback (most recent call last):
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+RuntimeError: reentrant call inside <_io.BufferedReader name=688>
+INFO:py4j.clientserver:Closing down clientserver connection
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+RuntimeError: reentrant call inside <_io.BufferedReader name=688>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+INFO:py4j.clientserver:Error while receiving.
+Traceback (most recent call last):
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "C:\Program Files\Python310\lib\socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\pyspark\context.py", line 381, in signal_handler
+    self.cancelAllJobs()
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\pyspark\context.py", line 2446, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\py4j\java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\pyspark\errors\exceptions\captured.py", line 179, in deco
+    return f(*a, **kw)
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\py4j\protocol.py", line 334, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o24.sc
+INFO:py4j.clientserver:Closing down clientserver connection
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "C:\Program Files\Python310\lib\socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\pyspark\context.py", line 381, in signal_handler
+    self.cancelAllJobs()
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\pyspark\context.py", line 2446, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\py4j\java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\pyspark\errors\exceptions\captured.py", line 179, in deco
+    return f(*a, **kw)
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\py4j\protocol.py", line 334, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o24.sc
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+INFO:py4j.clientserver:Closing down clientserver connection
+Reading from Kafka...
+Traceback (most recent call last):
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\spark_streaming.py", line 112, in <module>
+    main()
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\spark_streaming.py", line 105, in main
+    .start("C:/tmp/delta/wikimedia_events")
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\pyspark\sql\streaming\readwriter.py", line 1529, in start
+    return self._sq(self._jwrite.start(path))
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\py4j\java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\pyspark\errors\exceptions\captured.py", line 179, in deco
+    return f(*a, **kw)
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\py4j\protocol.py", line 334, in get_return_value
+    raise Py4JError(
+Terminate batch job (Y/N)? 
+Terminate batch job (Y/N)? 
+Missing Python executable 'python3', defaulting to 'C:\Users\chiyo\OneDrive\Desktop\streaming\venv\Lib\site-packages\pyspark\bin\..' for SPARK_HOME environment variable. Please install Python or specify the correct Python executable in PYSPARK_DRIVER_PYTHON or PYSPARK_PYTHON environment variable to detect SPARK_HOME safely.
+Traceback (most recent call last):
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\spark_streaming.py", line 112, in <module>
+    main()
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\spark_streaming.py", line 51, in main
+    spark = build_spark()
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\spark_streaming.py", line 46, in build_spark
+    .getOrCreate()
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\pyspark\sql\session.py", line 497, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\pyspark\context.py", line 515, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\pyspark\context.py", line 201, in __init__
+    SparkContext._ensure_initialized(self, gateway=gateway, conf=conf)
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\pyspark\context.py", line 436, in _ensure_initialized
+    SparkContext._gateway = gateway or launch_gateway(conf)
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\pyspark\java_gateway.py", line 104, in launch_gateway
+Terminate batch job (Y/N)? 
+Terminate batch job (Y/N)? 
+Missing Python executable 'python3', defaulting to 'C:\Users\chiyo\OneDrive\Desktop\streaming\venv\Lib\site-packages\pyspark\bin\..' for SPARK_HOME environment variable. Please install Python or specify the correct Python executable in PYSPARK_DRIVER_PYTHON or PYSPARK_PYTHON environment variable to detect SPARK_HOME safely.
+:: loading settings :: url = jar:file:/C:/Users/chiyo/OneDrive/Desktop/streaming/venv/Lib/site-packages/pyspark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: C:\Users\chiyo\.ivy2\cache
+The jars for the packages stored in: C:\Users\chiyo\.ivy2\jars
+org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+io.delta#delta-spark_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-5b2d5d55-4d35-4e27-9bb1-28b4b00cd80e;1.0
+	confs: [default]
+	found org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.3 in central
+	found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.3 in central
+	found org.apache.kafka#kafka-clients;3.4.1 in central
+	found org.lz4#lz4-java;1.8.0 in central
+	found org.xerial.snappy#snappy-java;1.1.10.5 in central
+	found org.slf4j#slf4j-api;2.0.7 in central
+	found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+	found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+	found commons-logging#commons-logging;1.1.3 in central
+	found com.google.code.findbugs#jsr305;3.0.0 in central
+	found org.apache.commons#commons-pool2;2.11.1 in central
+	found io.delta#delta-spark_2.12;3.2.0 in central
+	found io.delta#delta-storage;3.2.0 in central
+	found org.antlr#antlr4-runtime;4.9.3 in central
+:: resolution report :: resolve 2818ms :: artifacts dl 186ms
+	:: modules in use:
+	com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+	commons-logging#commons-logging;1.1.3 from central in [default]
+	io.delta#delta-spark_2.12;3.2.0 from central in [default]
+	io.delta#delta-storage;3.2.0 from central in [default]
+	org.antlr#antlr4-runtime;4.9.3 from central in [default]
+	org.apache.commons#commons-pool2;2.11.1 from central in [default]
+	org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+	org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+	org.apache.kafka#kafka-clients;3.4.1 from central in [default]
+	org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.3 from central in [default]
+	org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.3 from central in [default]
+	org.lz4#lz4-java;1.8.0 from central in [default]
+	org.slf4j#slf4j-api;2.0.7 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.10.5 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   14  |   0   |   0   |   0   ||   14  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-5b2d5d55-4d35-4e27-9bb1-28b4b00cd80e
+	confs: [default]
+	0 artifacts copied, 14 already retrieved (0kB/149ms)
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[Stage 0:>                                                          (0 + 1) / 1][Stage 0:>                  (0 + 1) / 1][Stage 1:>                  (0 + 3) / 5][Stage 0:>                  (0 + 1) / 1][Stage 1:>                  (0 + 5) / 5][Stage 0:>                  (0 + 1) / 1][Stage 1:===>               (1 + 4) / 5][Stage 0:>                  (0 + 1) / 1][Stage 1:===============>   (4 + 1) / 5]                                                                                [Stage 1:===============================================>           (4 + 1) / 5]                                                                                26/05/16 15:56:39 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+26/05/16 15:56:43 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+[Stage 2:>                                                          (0 + 4) / 5][Stage 2:===========>                                               (1 + 4) / 5][Stage 2:===================================>                       (3 + 2) / 5][Stage 2:===============================================>           (4 + 1) / 5][Stage 3:>                                                         (0 + 4) / 50][Stage 3:===>                                                      (3 + 4) / 50][Stage 3:====>                                                     (4 + 4) / 50][Stage 3:========>                                                 (7 + 4) / 50][Stage 3:==========>                                               (9 + 4) / 50][Stage 3:============>                                            (11 + 4) / 50][Stage 3:==============>                                          (13 + 4) / 50][Stage 3:=================>                                       (15 + 4) / 50][Stage 3:===================>                                     (17 + 4) / 50][Stage 3:=====================>                                   (19 + 4) / 50][Stage 3:=======================>                                 (21 + 4) / 50][Stage 3:==========================>                              (23 + 4) / 50][Stage 3:==============================>                          (27 + 4) / 50][Stage 3:=================================>                       (29 + 4) / 50][Stage 3:==================================>                      (30 + 4) / 50][Stage 3:======================================>                  (34 + 4) / 50][Stage 3:===========================================>             (38 + 4) / 50][Stage 3:==============================================>          (41 + 4) / 50][Stage 3:===============================================>         (42 + 4) / 50][Stage 3:===================================================>     (45 + 4) / 50][Stage 3:====================================================>    (46 + 4) / 50]                                                                                [Stage 5:>                                                          (0 + 1) / 1]                                                                                26/05/16 15:57:15 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 10000 milliseconds, but spent 35728 milliseconds
+26/05/16 15:57:15 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+[Stage 7:>                                                          (0 + 4) / 5][Stage 7:=======================>                                   (2 + 3) / 5][Stage 8:==>                                                       (2 + 4) / 50][Stage 8:====>                                                     (4 + 4) / 50][Stage 8:========>                                                 (7 + 4) / 50][Stage 8:==========>                                               (9 + 4) / 50][Stage 8:============>                                            (11 + 4) / 50][Stage 8:==============>                                          (13 + 4) / 50][Stage 8:===================>                                     (17 + 4) / 50][Stage 8:=====================>                                   (19 + 4) / 50][Stage 8:=======================>                                 (21 + 4) / 50][Stage 8:============================>                            (25 + 4) / 50][Stage 8:==============================>                          (27 + 4) / 50][Stage 8:=================================>                       (29 + 4) / 50][Stage 8:====================================>                    (32 + 4) / 50][Stage 8:=======================================>                 (35 + 4) / 50][Stage 8:=============================================>           (40 + 4) / 50][Stage 8:===============================================>         (42 + 4) / 50][Stage 8:===================================================>     (45 + 4) / 50][Stage 8:=======================================================> (49 + 1) / 50]                                                                                [Stage 10:>                                                         (0 + 1) / 1]                                                                                26/05/16 15:57:34 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 10000 milliseconds, but spent 18665 milliseconds
+[Stage 12:==================================>                       (3 + 2) / 5][Stage 13:=========>                                               (8 + 4) / 50][Stage 13:============>                                           (11 + 4) / 50][Stage 13:================>                                       (15 + 4) / 50][Stage 13:=====================>                                  (19 + 4) / 50][Stage 13:=========================>                              (23 + 4) / 50][Stage 13:============================>                           (25 + 4) / 50][Stage 13:===============================>                        (28 + 4) / 50][Stage 13:====================================>                   (33 + 4) / 50][Stage 13:========================================>               (36 + 4) / 50][Stage 13:============================================>           (40 + 4) / 50][Stage 13:=============================================>          (41 + 4) / 50][Stage 13:==================================================>     (45 + 4) / 50][Stage 13:=====================================================>  (48 + 2) / 50]                                                                                [Stage 15:>                                                         (0 + 1) / 1]                                                                                [Stage 17:==================================>                       (3 + 2) / 5][Stage 18:=======>                                                 (7 + 4) / 50][Stage 18:==========>                                              (9 + 4) / 50][Stage 18:============>                                           (11 + 4) / 50][Stage 18:===============>                                        (14 + 4) / 50][Stage 18:===================>                                    (17 + 4) / 50][Stage 18:======================>                                 (20 + 4) / 50][Stage 18:=======================>                                (21 + 4) / 50][Stage 18:==========================>                             (24 + 4) / 50][Stage 18:============================>                           (25 + 4) / 50][Stage 18:==============================>                         (27 + 4) / 50][Stage 18:================================>                       (29 + 4) / 50][Stage 18:=================================>                      (30 + 4) / 50][Stage 18:====================================>                   (33 + 4) / 50][Stage 18:======================================>                 (34 + 4) / 50][Stage 18:==========================================>             (38 + 4) / 50][Stage 18:===============================================>        (42 + 4) / 50][Stage 18:=================================================>      (44 + 4) / 50][Stage 18:====================================================>   (47 + 3) / 50][Stage 18:======================================================> (49 + 1) / 50]                                                                                [Stage 20:>                                                         (0 + 1) / 1]                                                                                26/05/16 15:57:57 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 10000 milliseconds, but spent 13848 milliseconds
+[Stage 23:====>                                                    (4 + 4) / 50][Stage 23:=======>                                                 (7 + 4) / 50][Stage 23:===========>                                            (10 + 4) / 50][Stage 23:==============>                                         (13 + 4) / 50][Stage 23:=================>                                      (16 + 4) / 50][Stage 23:====================>                                   (18 + 4) / 50][Stage 23:=======================>                                (21 + 4) / 50][Stage 23:==========================>                             (24 + 4) / 50][Stage 23:==============================>                         (27 + 4) / 50][Stage 23:================================>                       (29 + 4) / 50][Stage 23:====================================>                   (33 + 4) / 50][Stage 23:=========================================>              (37 + 4) / 50][Stage 23:==========================================>             (38 + 4) / 50][Stage 23:================================================>       (43 + 4) / 50][Stage 23:==================================================>     (45 + 4) / 50][Stage 23:======================================================> (49 + 1) / 50]                                                                                [Stage 25:>                                                         (0 + 1) / 1]                                                                                26/05/16 15:58:08 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 10000 milliseconds, but spent 11122 milliseconds
+[Stage 28:====>                                                    (4 + 4) / 50][Stage 28:=========>                                               (8 + 4) / 50][Stage 28:=============>                                          (12 + 4) / 50][Stage 28:===============>                                        (14 + 4) / 50][Stage 28:===================>                                    (17 + 4) / 50][Stage 28:======================>                                 (20 + 4) / 50][Stage 28:==========================>                             (24 + 4) / 50][Stage 28:===============================>                        (28 + 4) / 50][Stage 28:===================================>                    (32 + 4) / 50][Stage 28:====================================>                   (33 + 4) / 50][Stage 28:=========================================>              (37 + 4) / 50][Stage 28:============================================>           (40 + 4) / 50][Stage 28:===============================================>        (42 + 4) / 50][Stage 28:=================================================>      (44 + 4) / 50][Stage 28:===================================================>    (46 + 4) / 50][Stage 28:======================================================> (49 + 1) / 50][Stage 29:>                                                         (0 + 1) / 1]                                                                                [Stage 30:>                                                         (0 + 1) / 1]                                                                                26/05/16 15:58:23 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 10000 milliseconds, but spent 14537 milliseconds
+[Stage 32:=======================>                                  (2 + 3) / 5][Stage 33:====>                                                    (4 + 4) / 50][Stage 33:=======>                                                 (7 + 4) / 50][Stage 33:=========>                                               (8 + 4) / 50][Stage 33:============>                                           (11 + 4) / 50][Stage 33:==============>                                         (13 + 4) / 50][Stage 33:====================>                                   (18 + 4) / 50][Stage 33:======================>                                 (20 + 4) / 50][Stage 33:========================>                               (22 + 4) / 50][Stage 33:============================>                           (25 + 4) / 50][Stage 33:===============================>                        (28 + 4) / 50][Stage 33:===================================>                    (32 + 4) / 50][Stage 33:========================================>               (36 + 4) / 50][Stage 33:=========================================>              (37 + 4) / 50][Stage 33:=============================================>          (41 + 4) / 50][Stage 33:===============================================>        (42 + 4) / 50][Stage 33:==================================================>     (45 + 4) / 50][Stage 33:====================================================>   (47 + 3) / 50][Stage 33:======================================================> (49 + 1) / 50]                                                                                [Stage 35:>                                                         (0 + 1) / 1]                                                                                [Stage 37:>                                                         (0 + 4) / 5][Stage 37:===========>                                              (1 + 4) / 5][Stage 38:==>                                                      (2 + 4) / 50][Stage 38:====>                                                    (4 + 4) / 50][Stage 38:=====>                                                   (5 + 4) / 50][Stage 38:=========>                                               (8 + 4) / 50][Stage 38:============>                                           (11 + 4) / 50][Stage 38:=============>                                          (12 + 4) / 50][Stage 38:==============>                                         (13 + 4) / 50][Stage 38:=================>                                      (16 + 4) / 50][Stage 38:====================>                                   (18 + 4) / 50][Stage 38:=====================>                                  (19 + 4) / 50][Stage 38:=======================>                                (21 + 4) / 50][Stage 38:========================>                               (22 + 4) / 50][Stage 38:=========================>                              (23 + 4) / 50][Stage 38:============================>                           (25 + 4) / 50][Stage 38:=============================>                          (26 + 4) / 50][Stage 38:=================================>                      (30 + 4) / 50][Stage 38:===================================>                    (32 + 4) / 50][Stage 38:========================================>               (36 + 4) / 50][Stage 38:=============================================>          (41 + 4) / 50][Stage 38:=================================================>      (44 + 4) / 50][Stage 38:====================================================>   (47 + 3) / 50]                                                                                [Stage 41:===================>                                    (17 + 4) / 50][Stage 41:=================================>                      (30 + 4) / 50][Stage 41:================================================>       (43 + 4) / 50][Stage 42:>                                                         (0 + 1) / 1]                                                                                26/05/16 15:59:20 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 10000 milliseconds, but spent 56688 milliseconds
+[Stage 44:>                                                         (0 + 1) / 1]                                                                                [Stage 45:>                                                         (0 + 1) / 1][Stage 46:>                                                        (0 + 4) / 50][Stage 46:===>                                                     (3 + 4) / 50][Stage 46:====>                                                    (4 + 4) / 50][Stage 46:======>                                                  (6 + 4) / 50][Stage 46:=======>                                                 (7 + 4) / 50][Stage 46:=========>                                               (8 + 4) / 50][Stage 46:==========>                                              (9 + 4) / 50][Stage 46:===========>                                            (10 + 4) / 50][Stage 46:============>                                           (11 + 4) / 50][Stage 46:=============>                                          (12 + 4) / 50][Stage 46:==============>                                         (13 + 4) / 50][Stage 46:===============>                                        (14 + 4) / 50][Stage 46:================>                                       (15 + 4) / 50][Stage 46:=================>                                      (16 + 4) / 50][Stage 46:====================>                                   (18 + 4) / 50][Stage 46:=====================>                                  (19 + 4) / 50][Stage 46:======================>                                 (20 + 4) / 50][Stage 46:=======================>                                (21 + 4) / 50][Stage 46:========================>                               (22 + 4) / 50][Stage 46:=========================>                              (23 + 5) / 50][Stage 46:==========================>                             (24 + 4) / 50][Stage 46:=============================>                          (26 + 4) / 50][Stage 46:===============================>                        (28 + 4) / 50][Stage 46:================================>                       (29 + 4) / 50][Stage 46:=================================>                      (30 + 4) / 50][Stage 46:==================================>                     (31 + 4) / 50][Stage 46:===================================>                    (32 + 4) / 50][Stage 46:====================================>                   (33 + 4) / 50][Stage 46:=======================================>                (35 + 4) / 50][Stage 46:========================================>               (36 + 4) / 50][Stage 46:=========================================>              (37 + 4) / 50][Stage 46:===========================================>            (39 + 4) / 50][Stage 46:============================================>           (40 + 4) / 50][Stage 46:=============================================>          (41 + 4) / 50][Stage 46:=================================================>      (44 + 4) / 50][Stage 46:======================================================> (49 + 1) / 50]                                                                                [Stage 48:>                                                         (0 + 1) / 1]                                                                                26/05/16 16:00:33 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 10000 milliseconds, but spent 73417 milliseconds
+[Stage 50:=============================>                            (1 + 1) / 2][Stage 51:===>                                                     (3 + 4) / 50][Stage 51:======>                                                  (6 + 4) / 50][Stage 51:==========>                                              (9 + 4) / 50][Stage 51:=============>                                          (12 + 4) / 50][Stage 51:===============>                                        (14 + 4) / 50][Stage 51:====================>                                   (18 + 4) / 50][Stage 51:=======================>                                (21 + 4) / 50][Stage 51:=========================>                              (23 + 4) / 50][Stage 51:==============================>                         (27 + 4) / 50][Stage 51:===============================>                        (28 + 4) / 50][Stage 51:===================================>                    (32 + 4) / 50][Stage 51:========================================>               (36 + 4) / 50][Stage 51:===========================================>            (39 + 4) / 50][Stage 51:===============================================>        (42 + 4) / 50][Stage 51:==================================================>     (45 + 4) / 50][Stage 51:===================================================>    (46 + 4) / 50]                                                                                [Stage 53:>                                                         (0 + 1) / 1]                                                                                26/05/16 16:00:50 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 10000 milliseconds, but spent 16824 milliseconds
+[Stage 56:=========>                                               (8 + 4) / 50][Stage 56:================>                                       (15 + 4) / 50][Stage 56:======================>                                 (20 + 4) / 50][Stage 56:=============================>                          (26 + 4) / 50][Stage 56:=================================>                      (30 + 4) / 50][Stage 56:==========================================>             (38 + 4) / 50][Stage 56:=================================================>      (44 + 4) / 50]                                                                                [Stage 58:>                                                         (0 + 1) / 1]                                                                                [Stage 61:==============>                                         (13 + 4) / 50][Stage 61:=====================>                                  (19 + 4) / 50][Stage 61:==============================>                         (27 + 4) / 50][Stage 61:===================================>                    (32 + 4) / 50][Stage 61:========================================>               (36 + 4) / 50][Stage 61:================================================>       (43 + 4) / 50][Stage 61:======================================================> (49 + 1) / 50]                                                                                [Stage 66:==============>                                         (13 + 4) / 50][Stage 66:======================>                                 (20 + 4) / 50][Stage 66:=============================>                          (26 + 4) / 50][Stage 66:==================================>                     (31 + 4) / 50][Stage 66:==========================================>             (38 + 4) / 50][Stage 66:==================================================>     (45 + 4) / 50]                                                                                [Stage 71:==========>                                              (9 + 4) / 50][Stage 71:==============>                                         (13 + 4) / 50][Stage 71:======================>                                 (20 + 4) / 50][Stage 71:==========================>                             (24 + 4) / 50][Stage 71:=================================>                      (30 + 4) / 50][Stage 71:========================================>               (36 + 4) / 50][Stage 71:===============================================>        (42 + 4) / 50][Stage 71:======================================================> (49 + 1) / 50]                                                                                [Stage 76:===========>                                            (10 + 4) / 50][Stage 76:=================>                                      (16 + 4) / 50][Stage 76:=======================>                                (21 + 4) / 50][Stage 76:===============================>                        (28 + 4) / 50][Stage 76:======================================>                 (34 + 4) / 50][Stage 76:=============================================>          (41 + 4) / 50][Stage 76:=====================================================>  (48 + 2) / 50]                                                                                [Stage 81:==========>                                              (9 + 4) / 50][Stage 81:===============>                                        (14 + 4) / 50][Stage 81:====================>                                   (18 + 4) / 50][Stage 81:=======================>                                (21 + 4) / 50][Stage 81:============================>                           (25 + 4) / 50][Stage 81:=============================>                          (26 + 4) / 50][Stage 81:================================>                       (29 + 4) / 50][Stage 81:===================================>                    (32 + 4) / 50][Stage 81:========================================>               (36 + 4) / 50][Stage 81:============================================>           (40 + 4) / 50][Stage 81:==================================================>     (45 + 4) / 50][Stage 81:=====================================================>  (48 + 2) / 50]                                                                                [Stage 86:=========>                                               (8 + 4) / 50][Stage 86:=============>                                          (12 + 4) / 50][Stage 86:===================>                                    (17 + 4) / 50][Stage 86:=======================>                                (21 + 4) / 50][Stage 86:============================>                           (25 + 4) / 50][Stage 86:=================================>                      (30 + 4) / 50][Stage 86:======================================>                 (34 + 4) / 50][Stage 86:==========================================>             (38 + 4) / 50][Stage 86:===============================================>        (42 + 4) / 50][Stage 86:==================================================>     (45 + 4) / 50][Stage 86:====================================================>   (47 + 3) / 50]                                                                                [Stage 88:>                                                         (0 + 1) / 1]                                                                                [Stage 91:====================>                                   (18 + 4) / 50][Stage 91:=========================>                              (23 + 4) / 50][Stage 91:=================================>                      (30 + 4) / 50][Stage 91:=======================================>                (35 + 4) / 50][Stage 91:=============================================>          (41 + 4) / 50][Stage 91:===================================================>    (46 + 4) / 50]                                                                                [Stage 96:===============>                                        (14 + 4) / 50][Stage 96:====================>                                   (18 + 4) / 50][Stage 96:========================>                               (22 + 4) / 50][Stage 96:===============================>                        (28 + 4) / 50][Stage 96:===================================>                    (32 + 4) / 50][Stage 96:=========================================>              (37 + 4) / 50][Stage 96:=================================================>      (44 + 4) / 50][Stage 96:======================================================> (49 + 1) / 50]                                                                                [Stage 99:========================================>               (36 + 4) / 50]                                                                                [Stage 104:==============>                                        (13 + 4) / 50][Stage 104:====================>                                  (19 + 4) / 50][Stage 104:============================>                          (26 + 4) / 50][Stage 104:=====================================>                 (34 + 4) / 50][Stage 104:==========================================>            (39 + 4) / 50][Stage 104:==================================================>    (46 + 4) / 50]                                                                                [Stage 109:============>                                          (11 + 4) / 50][Stage 109:===============>                                       (14 + 4) / 50][Stage 109:==================>                                    (17 + 4) / 50][Stage 109:========================>                              (22 + 4) / 50][Stage 109:=============================>                         (27 + 4) / 50][Stage 109:===================================>                   (32 + 4) / 50][Stage 109:=======================================>               (36 + 4) / 50][Stage 109:============================================>          (40 + 4) / 50][Stage 109:================================================>      (44 + 4) / 50][Stage 109:====================================================>  (48 + 2) / 50]                                                                                [Stage 114:==========>                                             (9 + 4) / 50][Stage 114:==============>                                        (13 + 4) / 50][Stage 114:==================>                                    (17 + 4) / 50][Stage 114:=======================>                               (21 + 4) / 50][Stage 114:==========================>                            (24 + 4) / 50][Stage 114:===============================>                       (29 + 4) / 50][Stage 114:=====================================>                 (34 + 4) / 50][Stage 114:============================================>          (40 + 4) / 50][Stage 114:=================================================>     (45 + 4) / 50]                                                                                [Stage 119:=============>                                         (12 + 4) / 50][Stage 119:==================>                                    (17 + 4) / 50][Stage 119:==========================>                            (24 + 4) / 50][Stage 119:===============================>                       (29 + 4) / 50][Stage 119:=======================================>               (36 + 4) / 50][Stage 119:===============================================>       (43 + 4) / 50][Stage 119:===================================================>   (47 + 3) / 50]                                                                                [Stage 124:==============>                                        (13 + 4) / 50][Stage 124:======================>                                (20 + 4) / 50][Stage 124:============================>                          (26 + 4) / 50][Stage 124:==================================>                    (31 + 4) / 50][Stage 124:==========================================>            (39 + 4) / 50][Stage 124:===================================================>   (47 + 3) / 50]                                                                                [Stage 129:================>                                      (15 + 4) / 50][Stage 129:=======================>                               (21 + 4) / 50][Stage 129:==============================>                        (28 + 4) / 50][Stage 129:====================================>                  (33 + 4) / 50][Stage 129:============================================>          (40 + 4) / 50][Stage 129:=================================================>     (45 + 4) / 50]                                                                                [Stage 134:====================>                                  (19 + 4) / 50][Stage 134:===========================>                           (25 + 4) / 50][Stage 134:====================================>                  (33 + 4) / 50][Stage 134:==========================================>            (39 + 4) / 50][Stage 134:===================================================>   (47 + 3) / 50]                                                                                [Stage 139:======>                                                 (6 + 4) / 50][Stage 139:===========>                                           (10 + 4) / 50][Stage 139:=============>                                         (12 + 4) / 50][Stage 139:===================>                                   (18 + 4) / 50][Stage 139:========================>                              (22 + 4) / 50][Stage 139:===========================>                           (25 + 4) / 50][Stage 139:===============================>                       (29 + 4) / 50][Stage 139:=====================================>                 (34 + 4) / 50][Stage 139:=========================================>             (38 + 4) / 50][Stage 139:===============================================>       (43 + 4) / 50][Stage 139:==================================================>    (46 + 4) / 50]                                                                                [Stage 144:==============>                                        (13 + 4) / 50][Stage 144:==================>                                    (17 + 4) / 50][Stage 144:========================>                              (22 + 4) / 50][Stage 144:===============================>                       (29 + 4) / 50][Stage 144:=====================================>                 (34 + 4) / 50][Stage 144:=============================================>         (41 + 4) / 50][Stage 144:=====================================================> (49 + 1) / 50]                                                                                [Stage 149:===================>                                   (18 + 4) / 50][Stage 149:=============================>                         (27 + 4) / 50][Stage 149:====================================>                  (33 + 4) / 50][Stage 149:============================================>          (40 + 4) / 50][Stage 149:==================================================>    (46 + 4) / 50]                                                                                [Stage 154:==============>                                        (13 + 4) / 50][Stage 154:===================>                                   (18 + 4) / 50][Stage 154:==========================>                            (24 + 4) / 50][Stage 154:===============================>                       (29 + 4) / 50][Stage 154:====================================>                  (33 + 4) / 50][Stage 154:========================================>              (37 + 4) / 50][Stage 154:==============================================>        (42 + 4) / 50][Stage 154:=====================================================> (49 + 1) / 50]                                                                                [Stage 157:==========================================>            (39 + 4) / 50]                                                                                [Stage 162:===============>                                       (14 + 4) / 50][Stage 162:=================>                                     (16 + 4) / 50][Stage 162:====================>                                  (19 + 4) / 50][Stage 162:==========================>                            (24 + 4) / 50][Stage 162:===============================>                       (29 + 4) / 50][Stage 162:======================================>                (35 + 4) / 50][Stage 162:==============================================>        (42 + 4) / 50][Stage 162:=====================================================> (49 + 1) / 50]                                                                                [Stage 167:====================>                                  (19 + 4) / 50][Stage 167:=========================>                             (23 + 4) / 50][Stage 167:==================================>                    (31 + 4) / 50][Stage 167:======================================>                (35 + 4) / 50][Stage 167:==========================================>            (39 + 4) / 50][Stage 167:==============================================>        (42 + 4) / 50][Stage 167:===================================================>   (47 + 3) / 50]                                                                                [Stage 172:================>                                      (15 + 4) / 50][Stage 172:======================>                                (20 + 4) / 50][Stage 172:=============================>                         (27 + 4) / 50][Stage 172:====================================>                  (33 + 4) / 50][Stage 172:========================================>              (37 + 4) / 50][Stage 172:===============================================>       (43 + 4) / 50][Stage 172:====================================================>  (48 + 2) / 50]                                                                                [Stage 177:===============>                                       (14 + 4) / 50][Stage 177:======================>                                (20 + 4) / 50][Stage 177:=============================>                         (27 + 4) / 50][Stage 177:===================================>                   (32 + 4) / 50][Stage 177:============================================>          (40 + 4) / 50][Stage 177:===================================================>   (47 + 3) / 50]                                                                                [Stage 182:=================>                                     (16 + 4) / 50][Stage 182:==========================>                            (24 + 4) / 50][Stage 182:==============================>                        (28 + 4) / 50][Stage 182:===================================>                   (32 + 4) / 50][Stage 182:=========================================>             (38 + 4) / 50][Stage 182:=============================================>         (41 + 4) / 50][Stage 182:==================================================>    (46 + 4) / 50]                                                                                [Stage 187:===============>                                       (14 + 4) / 50][Stage 187:=======================>                               (21 + 4) / 50][Stage 187:============================>                          (26 + 4) / 50][Stage 187:====================================>                  (33 + 4) / 50][Stage 187:============================================>          (40 + 4) / 50][Stage 187:==================================================>    (46 + 4) / 50]                                                                                [Stage 192:==========>                                             (9 + 4) / 50][Stage 192:============>                                          (11 + 4) / 50][Stage 192:================>                                      (15 + 4) / 50][Stage 192:======================>                                (20 + 4) / 50][Stage 192:=========================>                             (23 + 4) / 50][Stage 192:===============================>                       (29 + 4) / 50][Stage 192:======================================>                (35 + 4) / 50][Stage 192:==========================================>            (39 + 4) / 50][Stage 192:==================================================>    (46 + 4) / 50]                                                                                [Stage 197:============>                                          (11 + 4) / 50][Stage 197:==================>                                    (17 + 4) / 50][Stage 197:===========================>                           (25 + 4) / 50][Stage 197:==================================>                    (31 + 4) / 50][Stage 197:========================================>              (37 + 4) / 50][Stage 197:==========================================>            (39 + 4) / 50][Stage 197:=================================================>     (45 + 4) / 50]                                                                                [Stage 202:=============>                                         (12 + 4) / 50][Stage 202:====================>                                  (19 + 4) / 50][Stage 202:==========================>                            (24 + 4) / 50][Stage 202:=================================>                     (30 + 4) / 50][Stage 202:========================================>              (37 + 4) / 50][Stage 202:=================================================>     (45 + 4) / 50][Stage 202:=====================================================> (49 + 1) / 50]                                                                                [Stage 207:===========>                                           (10 + 4) / 50][Stage 207:===============>                                       (14 + 4) / 50][Stage 207:===================>                                   (18 + 4) / 50][Stage 207:==========================>                            (24 + 4) / 50][Stage 207:===============================>                       (29 + 4) / 50][Stage 207:=====================================>                 (34 + 4) / 50][Stage 207:=========================================>             (38 + 4) / 50][Stage 207:==================================================>    (46 + 4) / 50]                                                                                [Stage 212:=====>                                                  (5 + 4) / 50][Stage 212:========>                                               (8 + 4) / 50][Stage 212:============>                                          (11 + 4) / 50][Stage 212:==============>                                        (13 + 4) / 50][Stage 212:==================>                                    (17 + 4) / 50][Stage 212:====================>                                  (19 + 4) / 50][Stage 212:========================>                              (22 + 4) / 50][Stage 212:===========================>                           (25 + 4) / 50][Stage 212:===============================>                       (29 + 4) / 50][Stage 212:==================================>                    (31 + 4) / 50][Stage 212:=====================================>                 (34 + 4) / 50][Stage 212:=========================================>             (38 + 4) / 50][Stage 212:=============================================>         (41 + 4) / 50][Stage 212:=================================================>     (45 + 4) / 50][Stage 212:=====================================================> (49 + 1) / 50]                                                                                [Stage 215:============================>                          (26 + 4) / 50][Stage 215:================================================>      (44 + 4) / 50]                                                                                26/05/16 16:05:42 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 10000 milliseconds, but spent 12934 milliseconds
+[Stage 220:=======>                                                (7 + 4) / 50][Stage 220:============>                                          (11 + 4) / 50][Stage 220:===============>                                       (14 + 4) / 50][Stage 220:====================>                                  (19 + 4) / 50][Stage 220:========================>                              (22 + 4) / 50][Stage 220:============================>                          (26 + 4) / 50][Stage 220:==================================>                    (31 + 4) / 50][Stage 220:======================================>                (35 + 4) / 50][Stage 220:========================================>              (37 + 4) / 50][Stage 220:============================================>          (40 + 4) / 50][Stage 220:===============================================>       (43 + 4) / 50][Stage 220:==================================================>    (46 + 4) / 50]                                                                                26/05/16 16:05:54 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 10000 milliseconds, but spent 11093 milliseconds
+[Stage 225:=================>                                     (16 + 4) / 50][Stage 225:=======================>                               (21 + 4) / 50][Stage 225:===========================>                           (25 + 4) / 50][Stage 225:===============================>                       (29 + 4) / 50][Stage 225:======================================>                (35 + 4) / 50][Stage 225:============================================>          (40 + 4) / 50][Stage 225:==================================================>    (46 + 4) / 50]                                                                                [Stage 230:===========>                                           (10 + 4) / 50][Stage 230:=================>                                     (16 + 4) / 50][Stage 230:========================>                              (22 + 4) / 50][Stage 230:==============================>                        (28 + 4) / 50][Stage 230:===================================>                   (32 + 4) / 50][Stage 230:=====================================>                 (34 + 4) / 50][Stage 230:=============================================>         (41 + 4) / 50][Stage 230:==================================================>    (46 + 4) / 50]                                                                                [Stage 235:===========>                                           (10 + 4) / 50][Stage 235:=============>                                         (12 + 4) / 50][Stage 235:=================>                                     (16 + 4) / 50][Stage 235:======================>                                (20 + 4) / 50][Stage 235:==========================>                            (24 + 4) / 50][Stage 235:=============================>                         (27 + 4) / 50][Stage 235:===================================>                   (32 + 4) / 50][Stage 235:=====================================>                 (34 + 4) / 50][Stage 235:=========================================>             (38 + 4) / 50][Stage 235:============================================>          (40 + 4) / 50][Stage 235:===============================================>       (43 + 4) / 50][Stage 235:===================================================>   (47 + 3) / 50]                                                                                [Stage 240:=====>                                                  (5 + 4) / 50][Stage 240:===========>                                           (10 + 4) / 50][Stage 240:==================>                                    (17 + 4) / 50][Stage 240:========================>                              (22 + 4) / 50][Stage 240:===========================>                           (25 + 4) / 50][Stage 240:=============================>                         (27 + 4) / 50][Stage 240:===================================>                   (32 + 4) / 50][Stage 240:========================================>              (37 + 4) / 50][Stage 240:=============================================>         (41 + 4) / 50][Stage 240:==================================================>    (46 + 4) / 50]                                                                                [Stage 245:=============>                                         (12 + 4) / 50][Stage 245:==================>                                    (17 + 4) / 50][Stage 245:========================>                              (22 + 4) / 50][Stage 245:============================>                          (26 + 4) / 50][Stage 245:===============================>                       (29 + 4) / 50][Stage 245:=======================================>               (36 + 4) / 50][Stage 245:===============================================>       (43 + 4) / 50][Stage 245:====================================================>  (48 + 2) / 50]                                                                                [Stage 250:=============>                                         (12 + 4) / 50][Stage 250:======================>                                (20 + 4) / 50][Stage 250:===========================>                           (25 + 4) / 50][Stage 250:===================================>                   (32 + 4) / 50][Stage 250:=======================================>               (36 + 4) / 50][Stage 250:=============================================>         (41 + 4) / 50][Stage 250:==================================================>    (46 + 4) / 50]26/05/16 16:06:43 ERROR Inbox: Ignoring error
+java.util.concurrent.RejectedExecutionException: Task org.apache.spark.executor.Executor$TaskRunner@599b68c0 rejected from java.util.concurrent.ThreadPoolExecutor@49e22d9f[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 3077]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2065)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:833)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1365)
+	at org.apache.spark.executor.Executor.launchTask(Executor.scala:363)
+	at org.apache.spark.scheduler.local.LocalEndpoint.$anonfun$reviveOffers$1(LocalSchedulerBackend.scala:93)
+	at org.apache.spark.scheduler.local.LocalEndpoint.$anonfun$reviveOffers$1$adapted(LocalSchedulerBackend.scala:91)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at org.apache.spark.scheduler.local.LocalEndpoint.reviveOffers(LocalSchedulerBackend.scala:91)
+	at org.apache.spark.scheduler.local.LocalEndpoint$$anonfun$receive$1.applyOrElse(LocalSchedulerBackend.scala:68)
+	at org.apache.spark.rpc.netty.Inbox.$anonfun$process$1(Inbox.scala:115)
+	at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:213)
+	at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:100)
+	at org.apache.spark.rpc.netty.MessageLoop.org$apache$spark$rpc$netty$MessageLoop$$receiveLoop(MessageLoop.scala:75)
+	at org.apache.spark.rpc.netty.MessageLoop$$anon$1.run(MessageLoop.scala:41)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+26/05/16 16:06:43 ERROR MicroBatchExecution: Query [id = 03c05b7e-0f66-4820-a879-fbad32bcb488, runId = a064aaa2-7dd4-4b2d-9673-b1cd9f5e0846] terminated with error
+org.apache.spark.SparkException: Job 147 cancelled because SparkContext was shut down
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$cleanUpAfterSchedulerStop$1(DAGScheduler.scala:1253)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$cleanUpAfterSchedulerStop$1$adapted(DAGScheduler.scala:1251)
+	at scala.collection.mutable.HashSet.foreach(HashSet.scala:79)
+	at org.apache.spark.scheduler.DAGScheduler.cleanUpAfterSchedulerStop(DAGScheduler.scala:1251)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onStop(DAGScheduler.scala:3087)
+	at org.apache.spark.util.EventLoop.stop(EventLoop.scala:84)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$stop$3(DAGScheduler.scala:2973)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1375)
+	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:2973)
+	at org.apache.spark.SparkContext.$anonfun$stop$12(SparkContext.scala:2258)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1375)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2258)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2211)
+	at org.apache.spark.SparkContext.$anonfun$new$34(SparkContext.scala:681)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:214)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.Try$.apply(Try.scala:213)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:989)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2393)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2414)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2433)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2458)
+	at org.apache.spark.rdd.RDD.$anonfun$collect$1(RDD.scala:1049)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:410)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:1048)
+	at org.apache.spark.sql.execution.SparkPlan.executeCollect(SparkPlan.scala:448)
+	at org.apache.spark.sql.Dataset.collectFromPlan(Dataset.scala:4333)
+	at org.apache.spark.sql.Dataset.$anonfun$head$1(Dataset.scala:3316)
+	at org.apache.spark.sql.Dataset.$anonfun$withAction$2(Dataset.scala:4323)
+	at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:546)
+	at org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:4321)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.Dataset.withAction(Dataset.scala:4321)
+	at org.apache.spark.sql.Dataset.head(Dataset.scala:3316)
+	at org.apache.spark.sql.Dataset.head(Dataset.scala:3323)
+	at org.apache.spark.sql.Dataset.first(Dataset.scala:3330)
+	at org.apache.spark.sql.delta.SnapshotStateManager.$anonfun$extractComputedState$1(SnapshotState.scala:130)
+	at org.apache.spark.sql.delta.metering.DeltaLogging.recordFrameProfile(DeltaLogging.scala:168)
+	at org.apache.spark.sql.delta.metering.DeltaLogging.recordFrameProfile$(DeltaLogging.scala:166)
+	at org.apache.spark.sql.delta.Snapshot.recordFrameProfile(Snapshot.scala:75)
+	at org.apache.spark.sql.delta.SnapshotStateManager.extractComputedState(SnapshotState.scala:127)
+	at org.apache.spark.sql.delta.SnapshotStateManager.extractComputedState$(SnapshotState.scala:126)
+	at org.apache.spark.sql.delta.Snapshot.extractComputedState(Snapshot.scala:75)
+	at org.apache.spark.sql.delta.SnapshotStateManager.$anonfun$computedState$2(SnapshotState.scala:80)
+	at org.apache.spark.sql.delta.metering.DeltaLogging.recordFrameProfile(DeltaLogging.scala:168)
+	at org.apache.spark.sql.delta.metering.DeltaLogging.recordFrameProfile$(DeltaLogging.scala:166)
+	at org.apache.spark.sql.delta.Snapshot.recordFrameProfile(Snapshot.scala:75)
+	at org.apache.spark.sql.delta.SnapshotStateManager.$anonfun$computedState$1(SnapshotState.scala:78)
+	at org.apache.spark.sql.delta.util.DeltaProgressReporter.withJobDescription(DeltaProgressReporter.scala:53)
+	at org.apache.spark.sql.delta.util.DeltaProgressReporter.withStatusCode(DeltaProgressReporter.scala:32)
+	at org.apache.spark.sql.delta.util.DeltaProgressReporter.withStatusCode$(DeltaProgressReporter.scala:27)
+	at org.apache.spark.sql.delta.Snapshot.withStatusCode(Snapshot.scala:75)
+	at org.apache.spark.sql.delta.SnapshotStateManager.computedState(SnapshotState.scala:78)
+	at org.apache.spark.sql.delta.SnapshotStateManager.computedState$(SnapshotState.scala:76)
+	at org.apache.spark.sql.delta.Snapshot.computedState$lzycompute(Snapshot.scala:75)
+	at org.apache.spark.sql.delta.Snapshot.computedState(Snapshot.scala:75)
+	at org.apache.spark.sql.delta.SnapshotStateManager.setTransactions(SnapshotState.scala:163)
+	at org.apache.spark.sql.delta.SnapshotStateManager.setTransactions$(SnapshotState.scala:163)
+	at org.apache.spark.sql.delta.Snapshot.setTransactions(Snapshot.scala:75)
+	at org.apache.spark.sql.delta.SnapshotStateManager.transactions(SnapshotState.scala:70)
+	at org.apache.spark.sql.delta.SnapshotStateManager.transactions$(SnapshotState.scala:70)
+	at org.apache.spark.sql.delta.Snapshot.transactions$lzycompute(Snapshot.scala:75)
+	at org.apache.spark.sql.delta.Snapshot.transactions(Snapshot.scala:75)
+	at org.apache.spark.sql.delta.OptimisticTransactionImpl.txnVersion(OptimisticTransaction.scala:870)
+	at org.apache.spark.sql.delta.OptimisticTransactionImpl.txnVersion$(OptimisticTransaction.scala:868)
+	at org.apache.spark.sql.delta.OptimisticTransaction.txnVersion(OptimisticTransaction.scala:147)
+	at org.apache.spark.sql.delta.sources.DeltaSink.addBatchWithStatusImpl(DeltaSink.scala:126)
+	at org.apache.spark.sql.delta.sources.DeltaSink.addBatch(DeltaSink.scala:97)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$17(MicroBatchExecution.scala:732)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$16(MicroBatchExecution.scala:729)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:427)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:425)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runBatch(MicroBatchExecution.scala:729)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$2(MicroBatchExecution.scala:286)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:427)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:425)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1(MicroBatchExecution.scala:249)
+	at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.execute(TriggerExecutor.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runActivatedStream(MicroBatchExecution.scala:239)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$1(StreamExecution.scala:311)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:289)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.$anonfun$run$1(StreamExecution.scala:211)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:211)
+26/05/16 16:06:44 WARN SparkEnv: Exception while deleting Spark temp dir: C:\Users\chiyo\AppData\Local\Temp\spark-88acadfd-2ad0-4588-9722-486aa1889917\userFiles-0e83992f-fd3b-4ef5-b611-d59ecb29f2cb
+java.io.IOException: Failed to delete: C:\Users\chiyo\AppData\Local\Temp\spark-88acadfd-2ad0-4588-9722-486aa1889917\userFiles-0e83992f-fd3b-4ef5-b611-d59ecb29f2cb\org.xerial.snappy_snappy-java-1.1.10.5.jar
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:147)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:130)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:90)
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:121)
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:120)
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1126)
+	at org.apache.spark.SparkEnv.stop(SparkEnv.scala:108)
+	at org.apache.spark.SparkContext.$anonfun$stop$25(SparkContext.scala:2305)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1375)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2305)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2211)
+	at org.apache.spark.SparkContext.$anonfun$new$34(SparkContext.scala:681)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:214)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.Try$.apply(Try.scala:213)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+26/05/16 16:06:44 ERROR ShutdownHookManager: Exception while deleting Spark temp dir: C:\Users\chiyo\AppData\Local\Temp\spark-88acadfd-2ad0-4588-9722-486aa1889917
+java.io.IOException: Failed to delete: C:\Users\chiyo\AppData\Local\Temp\spark-88acadfd-2ad0-4588-9722-486aa1889917\userFiles-0e83992f-fd3b-4ef5-b611-d59ecb29f2cb\org.xerial.snappy_snappy-java-1.1.10.5.jar
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:147)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:130)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:130)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:90)
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:121)
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:120)
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1126)
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4(ShutdownHookManager.scala:65)
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4$adapted(ShutdownHookManager.scala:62)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$2(ShutdownHookManager.scala:62)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:214)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.Try$.apply(Try.scala:213)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+26/05/16 16:06:44 ERROR ShutdownHookManager: Exception while deleting Spark temp dir: C:\Users\chiyo\AppData\Local\Temp\spark-88acadfd-2ad0-4588-9722-486aa1889917\userFiles-0e83992f-fd3b-4ef5-b611-d59ecb29f2cb
+java.io.IOException: Failed to delete: C:\Users\chiyo\AppData\Local\Temp\spark-88acadfd-2ad0-4588-9722-486aa1889917\userFiles-0e83992f-fd3b-4ef5-b611-d59ecb29f2cb\org.xerial.snappy_snappy-java-1.1.10.5.jar
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:147)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:130)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:90)
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:121)
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:120)
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1126)
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4(ShutdownHookManager.scala:65)
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4$adapted(ShutdownHookManager.scala:62)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$2(ShutdownHookManager.scala:62)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:214)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.Try$.apply(Try.scala:213)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Terminate batch job (Y/N)? 
+Terminate batch job (Y/N)? 

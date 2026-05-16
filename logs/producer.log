@@ -1,0 +1,412 @@
+2026-05-16 15:52:22,299 [INFO] Kafka producer ready.
+2026-05-16 15:52:22,300 [INFO] Connecting to Wikimedia stream...
+2026-05-16 15:52:22,308 [INFO] <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2026-05-16 15:52:22,309 [INFO] <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2026-05-16 15:52:23,463 [INFO] First event: {'$schema': '/mediawiki/recentchange/1.0.0', 'meta': {'uri': 'https://zh.wikisource.org/wiki/Category:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E6%9C%89%E9%A2%86%E5%9F%9
+2026-05-16 15:52:23,463 [INFO] <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=host.docker.internal:9092 <connecting> [IPv4 ('192.168.1.5', 9092)]>: connecting to host.docker.internal:9092 [('192.168.1.5', 9092) IPv4]
+2026-05-16 15:52:23,466 [INFO] <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=host.docker.internal:9092 <connected> [IPv4 ('192.168.1.5', 9092)]>: Connection complete.
+2026-05-16 15:52:23,466 [INFO] <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2026-05-16 15:52:25,374 [INFO] Published 100 events.
+2026-05-16 15:52:27,288 [INFO] Published 200 events.
+2026-05-16 15:52:28,996 [INFO] Published 300 events.
+2026-05-16 15:52:30,892 [INFO] Published 400 events.
+2026-05-16 15:52:33,126 [INFO] Published 500 events.
+2026-05-16 15:52:35,772 [INFO] Published 600 events.
+2026-05-16 15:52:37,310 [INFO] Published 700 events.
+2026-05-16 15:52:38,688 [INFO] Published 800 events.
+2026-05-16 15:52:40,701 [INFO] Published 900 events.
+2026-05-16 15:52:42,742 [INFO] Published 1000 events.
+2026-05-16 15:52:45,026 [INFO] Published 1100 events.
+2026-05-16 15:52:47,488 [INFO] Published 1200 events.
+2026-05-16 15:52:49,667 [INFO] Published 1300 events.
+2026-05-16 15:52:51,346 [INFO] Published 1400 events.
+2026-05-16 15:52:53,450 [INFO] Published 1500 events.
+2026-05-16 15:52:55,006 [INFO] Published 1600 events.
+2026-05-16 15:52:57,325 [INFO] Published 1700 events.
+2026-05-16 15:52:59,240 [INFO] Published 1800 events.
+2026-05-16 15:53:01,990 [INFO] Published 1900 events.
+2026-05-16 15:53:03,347 [INFO] Published 2000 events.
+2026-05-16 15:55:38,732 [INFO] Kafka producer ready.
+2026-05-16 15:55:38,732 [INFO] Connecting to Wikimedia stream...
+2026-05-16 15:55:38,739 [INFO] <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2026-05-16 15:55:38,740 [INFO] <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2026-05-16 15:55:39,705 [INFO] First event: {'$schema': '/mediawiki/recentchange/1.0.0', 'meta': {'uri': 'https://commons.wikimedia.org/wiki/File:%E6%A2%A7%E6%A1%90%E5%BC%84%E9%81%97%E5%9D%80,_2026-05-16_02.jpg', 'request_id': 'b2347eff-007f-4f
+2026-05-16 15:55:39,712 [INFO] <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=host.docker.internal:9092 <connecting> [IPv4 ('192.168.1.5', 9092)]>: connecting to host.docker.internal:9092 [('192.168.1.5', 9092) IPv4]
+2026-05-16 15:55:39,712 [INFO] <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=host.docker.internal:9092 <connected> [IPv4 ('192.168.1.5', 9092)]>: Connection complete.
+2026-05-16 15:55:39,712 [INFO] <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2026-05-16 15:55:41,298 [INFO] Published 100 events.
+2026-05-16 15:55:43,009 [INFO] Published 200 events.
+2026-05-16 15:55:44,985 [INFO] Shutting down — flushing producer.
+2026-05-16 15:55:47,362 [INFO] Kafka producer ready.
+2026-05-16 15:55:47,362 [INFO] Connecting to Wikimedia stream...
+2026-05-16 15:55:47,372 [INFO] <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2026-05-16 15:55:47,372 [INFO] <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2026-05-16 15:55:48,347 [INFO] First event: {'$schema': '/mediawiki/recentchange/1.0.0', 'meta': {'uri': 'https://it.wikipedia.org/wiki/AOL', 'request_id': '2ccdf25a-b396-4a0a-b9f1-5daa16021423', 'id': '5b7465bb-15bd-4d0f-9871-e47ab5ecee42', 'd
+2026-05-16 15:55:48,347 [INFO] <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=host.docker.internal:9092 <connecting> [IPv4 ('192.168.1.5', 9092)]>: connecting to host.docker.internal:9092 [('192.168.1.5', 9092) IPv4]
+2026-05-16 15:55:48,347 [INFO] <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=host.docker.internal:9092 <connected> [IPv4 ('192.168.1.5', 9092)]>: Connection complete.
+2026-05-16 15:55:48,347 [INFO] <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2026-05-16 15:55:50,205 [INFO] Published 100 events.
+2026-05-16 15:55:52,192 [INFO] Published 200 events.
+2026-05-16 15:55:54,212 [INFO] Published 300 events.
+2026-05-16 15:55:56,569 [INFO] Published 400 events.
+2026-05-16 15:55:58,432 [INFO] Published 500 events.
+2026-05-16 15:55:59,810 [INFO] Published 600 events.
+2026-05-16 15:56:02,261 [INFO] Published 700 events.
+2026-05-16 15:56:04,205 [INFO] Published 800 events.
+2026-05-16 15:56:06,208 [INFO] Published 900 events.
+2026-05-16 15:56:08,559 [INFO] Published 1000 events.
+2026-05-16 15:56:10,142 [INFO] Published 1100 events.
+2026-05-16 15:56:12,644 [INFO] Published 1200 events.
+2026-05-16 15:56:14,415 [INFO] Published 1300 events.
+2026-05-16 15:56:16,238 [INFO] Published 1400 events.
+2026-05-16 15:56:18,759 [INFO] Published 1500 events.
+2026-05-16 15:56:20,842 [INFO] Published 1600 events.
+2026-05-16 15:56:22,118 [INFO] Published 1700 events.
+2026-05-16 15:56:24,985 [INFO] Published 1800 events.
+2026-05-16 15:56:27,229 [INFO] Published 1900 events.
+2026-05-16 15:56:28,499 [INFO] Published 2000 events.
+2026-05-16 15:56:30,089 [INFO] Published 2100 events.
+2026-05-16 15:56:32,269 [INFO] Published 2200 events.
+2026-05-16 15:56:34,501 [INFO] Published 2300 events.
+2026-05-16 15:56:37,134 [INFO] Published 2400 events.
+2026-05-16 15:56:38,227 [INFO] Published 2500 events.
+2026-05-16 15:56:39,884 [INFO] Published 2600 events.
+2026-05-16 15:56:42,432 [INFO] Published 2700 events.
+2026-05-16 15:56:44,956 [INFO] Published 2800 events.
+2026-05-16 15:56:46,581 [INFO] Published 2900 events.
+2026-05-16 15:56:48,897 [INFO] Published 3000 events.
+2026-05-16 15:56:51,583 [INFO] Published 3100 events.
+2026-05-16 15:56:53,610 [INFO] Published 3200 events.
+2026-05-16 15:56:55,769 [INFO] Published 3300 events.
+2026-05-16 15:56:58,712 [INFO] Published 3400 events.
+2026-05-16 15:57:01,031 [INFO] Published 3500 events.
+2026-05-16 15:57:02,289 [INFO] Published 3600 events.
+2026-05-16 15:57:04,517 [INFO] Published 3700 events.
+2026-05-16 15:57:06,574 [INFO] Published 3800 events.
+2026-05-16 15:57:08,332 [INFO] Published 3900 events.
+2026-05-16 15:57:10,025 [INFO] Published 4000 events.
+2026-05-16 15:57:11,752 [INFO] Published 4100 events.
+2026-05-16 15:57:13,781 [INFO] Published 4200 events.
+2026-05-16 15:57:15,936 [INFO] Published 4300 events.
+2026-05-16 15:57:18,005 [INFO] Published 4400 events.
+2026-05-16 15:57:20,510 [INFO] Published 4500 events.
+2026-05-16 15:57:23,526 [INFO] Published 4600 events.
+2026-05-16 15:57:25,668 [INFO] Published 4700 events.
+2026-05-16 15:57:27,912 [INFO] Published 4800 events.
+2026-05-16 15:57:29,228 [INFO] Published 4900 events.
+2026-05-16 15:57:31,201 [INFO] Published 5000 events.
+2026-05-16 15:57:35,051 [INFO] Published 5100 events.
+2026-05-16 15:57:37,044 [INFO] Published 5200 events.
+2026-05-16 15:57:37,916 [INFO] Published 5300 events.
+2026-05-16 15:57:39,820 [INFO] Published 5400 events.
+2026-05-16 15:57:41,428 [INFO] Published 5500 events.
+2026-05-16 15:57:43,409 [INFO] Published 5600 events.
+2026-05-16 15:57:45,211 [INFO] Published 5700 events.
+2026-05-16 15:57:46,718 [INFO] Published 5800 events.
+2026-05-16 15:57:49,109 [INFO] Published 5900 events.
+2026-05-16 15:57:50,823 [INFO] Published 6000 events.
+2026-05-16 15:57:53,237 [INFO] Published 6100 events.
+2026-05-16 15:57:54,952 [INFO] Published 6200 events.
+2026-05-16 15:57:57,224 [INFO] Published 6300 events.
+2026-05-16 15:57:59,527 [INFO] Published 6400 events.
+2026-05-16 15:58:01,565 [INFO] Published 6500 events.
+2026-05-16 15:58:03,627 [INFO] Published 6600 events.
+2026-05-16 15:58:05,381 [INFO] Published 6700 events.
+2026-05-16 15:58:14,151 [INFO] Published 6800 events.
+2026-05-16 15:58:15,561 [INFO] Published 6900 events.
+2026-05-16 15:58:15,988 [INFO] Published 7000 events.
+2026-05-16 15:58:16,400 [INFO] Published 7100 events.
+2026-05-16 15:58:16,875 [INFO] Published 7200 events.
+2026-05-16 15:58:17,262 [INFO] Published 7300 events.
+2026-05-16 15:58:18,792 [INFO] Published 7400 events.
+2026-05-16 15:58:20,577 [INFO] Published 7500 events.
+2026-05-16 15:58:21,963 [INFO] Published 7600 events.
+2026-05-16 15:58:23,113 [INFO] Published 7700 events.
+2026-05-16 15:58:26,019 [INFO] Published 7800 events.
+2026-05-16 15:58:27,636 [INFO] Published 7900 events.
+2026-05-16 15:58:30,160 [INFO] Published 8000 events.
+2026-05-16 15:58:30,740 [INFO] Published 8100 events.
+2026-05-16 15:58:32,758 [INFO] Published 8200 events.
+2026-05-16 15:58:34,871 [INFO] Published 8300 events.
+2026-05-16 15:58:36,273 [INFO] Published 8400 events.
+2026-05-16 15:58:38,074 [INFO] Published 8500 events.
+2026-05-16 15:58:40,009 [INFO] Published 8600 events.
+2026-05-16 15:58:41,772 [INFO] Published 8700 events.
+2026-05-16 15:58:44,365 [INFO] Published 8800 events.
+2026-05-16 15:58:46,128 [INFO] Published 8900 events.
+2026-05-16 15:58:47,865 [INFO] Published 9000 events.
+2026-05-16 15:58:49,845 [INFO] Published 9100 events.
+2026-05-16 15:58:52,289 [INFO] Published 9200 events.
+2026-05-16 15:58:54,062 [INFO] Published 9300 events.
+2026-05-16 15:58:56,815 [INFO] Published 9400 events.
+2026-05-16 15:58:59,823 [INFO] Published 9500 events.
+2026-05-16 15:59:03,351 [INFO] Published 9600 events.
+2026-05-16 15:59:05,905 [INFO] Published 9700 events.
+2026-05-16 15:59:08,828 [INFO] Published 9800 events.
+2026-05-16 15:59:09,179 [INFO] Published 9900 events.
+2026-05-16 15:59:09,541 [INFO] Published 10000 events.
+2026-05-16 15:59:10,676 [INFO] Published 10100 events.
+2026-05-16 15:59:13,900 [INFO] Published 10200 events.
+2026-05-16 15:59:16,252 [INFO] Published 10300 events.
+2026-05-16 15:59:18,671 [INFO] Published 10400 events.
+2026-05-16 15:59:20,972 [INFO] Published 10500 events.
+2026-05-16 15:59:23,216 [INFO] Published 10600 events.
+2026-05-16 15:59:25,902 [INFO] Published 10700 events.
+2026-05-16 15:59:28,458 [INFO] Published 10800 events.
+2026-05-16 15:59:30,805 [INFO] Published 10900 events.
+2026-05-16 15:59:32,259 [INFO] Published 11000 events.
+2026-05-16 15:59:34,158 [INFO] Published 11100 events.
+2026-05-16 15:59:36,367 [INFO] Published 11200 events.
+2026-05-16 15:59:37,650 [INFO] Published 11300 events.
+2026-05-16 15:59:40,400 [INFO] Published 11400 events.
+2026-05-16 15:59:42,798 [INFO] Published 11500 events.
+2026-05-16 15:59:45,450 [INFO] Published 11600 events.
+2026-05-16 15:59:47,481 [INFO] Published 11700 events.
+2026-05-16 15:59:49,834 [INFO] Published 11800 events.
+2026-05-16 15:59:50,423 [INFO] Published 11900 events.
+2026-05-16 15:59:52,253 [INFO] Published 12000 events.
+2026-05-16 15:59:54,175 [INFO] Published 12100 events.
+2026-05-16 16:00:01,781 [INFO] Published 12200 events.
+2026-05-16 16:00:08,278 [INFO] Published 12300 events.
+2026-05-16 16:00:12,782 [INFO] Published 12400 events.
+2026-05-16 16:00:16,590 [INFO] Published 12500 events.
+2026-05-16 16:00:17,999 [INFO] Published 12600 events.
+2026-05-16 16:00:21,282 [INFO] Published 12700 events.
+2026-05-16 16:00:25,463 [INFO] Published 12800 events.
+2026-05-16 16:00:27,690 [INFO] Published 12900 events.
+2026-05-16 16:00:27,908 [INFO] Published 13000 events.
+2026-05-16 16:00:28,207 [INFO] Published 13100 events.
+2026-05-16 16:00:28,516 [INFO] Published 13200 events.
+2026-05-16 16:00:28,748 [INFO] Published 13300 events.
+2026-05-16 16:00:29,114 [INFO] Published 13400 events.
+2026-05-16 16:00:29,478 [INFO] Published 13500 events.
+2026-05-16 16:00:29,851 [INFO] Published 13600 events.
+2026-05-16 16:00:30,194 [INFO] Published 13700 events.
+2026-05-16 16:00:30,888 [INFO] Published 13800 events.
+2026-05-16 16:00:33,018 [INFO] Published 13900 events.
+2026-05-16 16:00:36,197 [INFO] Published 14000 events.
+2026-05-16 16:00:37,514 [INFO] Published 14100 events.
+2026-05-16 16:00:39,497 [INFO] Published 14200 events.
+2026-05-16 16:00:40,928 [INFO] Published 14300 events.
+2026-05-16 16:00:42,654 [INFO] Published 14400 events.
+2026-05-16 16:00:44,405 [INFO] Published 14500 events.
+2026-05-16 16:00:46,196 [INFO] Published 14600 events.
+Traceback (most recent call last):
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\requests\models.py", line 822, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\urllib3\response.py", line 1260, in stream
+    yield from self.read_chunked(amt, decode_content=decode_content)
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\urllib3\response.py", line 1430, in read_chunked
+    self._update_chunk_length()
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\urllib3\response.py", line 1354, in _update_chunk_length
+    raise ProtocolError("Response ended prematurely") from None
+urllib3.exceptions.ProtocolError: Response ended prematurely
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\producer.py", line 75, in <module>
+    stream_to_kafka(producer)
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\producer.py", line 49, in stream_to_kafka
+    for raw_line in response.iter_lines(decode_unicode=True):
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\requests\models.py", line 871, in iter_lines
+    for chunk in self.iter_content(
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\requests\utils.py", line 559, in stream_decode_response_unicode
+    for chunk in iterator:
+  File "C:\Users\chiyo\OneDrive\Desktop\streaming\venv\lib\site-packages\requests\models.py", line 824, in generate
+    raise ChunkedEncodingError(e)
+requests.exceptions.ChunkedEncodingError: Response ended prematurely
+2026-05-16 16:01:00,909 [INFO] Kafka producer ready.
+2026-05-16 16:01:00,909 [INFO] Connecting to Wikimedia stream...
+2026-05-16 16:01:00,918 [INFO] <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2026-05-16 16:01:00,919 [INFO] <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2026-05-16 16:01:02,001 [INFO] First event: {'$schema': '/mediawiki/recentchange/1.0.0', 'meta': {'uri': 'https://commons.wikimedia.org/wiki/File:Voter_turnout_of_voting_age_population,_North_America,_1944.svg', 'request_id': 'c2e4fcba-d16e-426
+2026-05-16 16:01:02,002 [INFO] <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=host.docker.internal:9092 <connecting> [IPv4 ('192.168.1.5', 9092)]>: connecting to host.docker.internal:9092 [('192.168.1.5', 9092) IPv4]
+2026-05-16 16:01:02,003 [INFO] <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=host.docker.internal:9092 <connected> [IPv4 ('192.168.1.5', 9092)]>: Connection complete.
+2026-05-16 16:01:02,003 [INFO] <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2026-05-16 16:01:03,699 [INFO] Published 100 events.
+2026-05-16 16:01:05,597 [INFO] Published 200 events.
+2026-05-16 16:01:07,872 [INFO] Published 300 events.
+2026-05-16 16:01:09,639 [INFO] Published 400 events.
+2026-05-16 16:01:11,631 [INFO] Published 500 events.
+2026-05-16 16:01:13,856 [INFO] Published 600 events.
+2026-05-16 16:01:16,058 [INFO] Published 700 events.
+2026-05-16 16:01:17,879 [INFO] Published 800 events.
+2026-05-16 16:01:19,543 [INFO] Published 900 events.
+2026-05-16 16:01:21,698 [INFO] Published 1000 events.
+2026-05-16 16:01:23,187 [INFO] Published 1100 events.
+2026-05-16 16:01:24,779 [INFO] Published 1200 events.
+2026-05-16 16:01:25,799 [INFO] Published 1300 events.
+2026-05-16 16:01:27,836 [INFO] Published 1400 events.
+2026-05-16 16:01:30,042 [INFO] Published 1500 events.
+2026-05-16 16:01:31,294 [INFO] Published 1600 events.
+2026-05-16 16:01:33,230 [INFO] Published 1700 events.
+2026-05-16 16:01:34,618 [INFO] Published 1800 events.
+2026-05-16 16:01:36,885 [INFO] Published 1900 events.
+2026-05-16 16:01:39,169 [INFO] Published 2000 events.
+2026-05-16 16:01:40,444 [INFO] Published 2100 events.
+2026-05-16 16:01:41,942 [INFO] Published 2200 events.
+2026-05-16 16:01:43,962 [INFO] Published 2300 events.
+2026-05-16 16:01:45,832 [INFO] Published 2400 events.
+2026-05-16 16:01:47,553 [INFO] Published 2500 events.
+2026-05-16 16:01:49,084 [INFO] Published 2600 events.
+2026-05-16 16:01:50,944 [INFO] Published 2700 events.
+2026-05-16 16:01:54,259 [INFO] Published 2800 events.
+2026-05-16 16:01:55,700 [INFO] Published 2900 events.
+2026-05-16 16:01:56,752 [INFO] Published 3000 events.
+2026-05-16 16:01:57,868 [INFO] Published 3100 events.
+2026-05-16 16:01:59,534 [INFO] Published 3200 events.
+2026-05-16 16:02:01,722 [INFO] Published 3300 events.
+2026-05-16 16:02:03,566 [INFO] Published 3400 events.
+2026-05-16 16:02:05,113 [INFO] Published 3500 events.
+2026-05-16 16:02:06,818 [INFO] Published 3600 events.
+2026-05-16 16:02:08,645 [INFO] Published 3700 events.
+2026-05-16 16:02:10,559 [INFO] Published 3800 events.
+2026-05-16 16:02:12,375 [INFO] Published 3900 events.
+2026-05-16 16:02:13,911 [INFO] Published 4000 events.
+2026-05-16 16:02:16,306 [INFO] Published 4100 events.
+2026-05-16 16:02:17,713 [INFO] Published 4200 events.
+2026-05-16 16:02:19,243 [INFO] Published 4300 events.
+2026-05-16 16:02:20,879 [INFO] Published 4400 events.
+2026-05-16 16:02:23,374 [INFO] Published 4500 events.
+2026-05-16 16:02:25,258 [INFO] Published 4600 events.
+2026-05-16 16:02:28,234 [INFO] Published 4700 events.
+2026-05-16 16:02:30,230 [INFO] Published 4800 events.
+2026-05-16 16:02:31,973 [INFO] Published 4900 events.
+2026-05-16 16:02:33,999 [INFO] Published 5000 events.
+2026-05-16 16:02:35,852 [INFO] Published 5100 events.
+2026-05-16 16:02:37,760 [INFO] Published 5200 events.
+2026-05-16 16:02:39,263 [INFO] Published 5300 events.
+2026-05-16 16:02:40,566 [INFO] Published 5400 events.
+2026-05-16 16:02:42,760 [INFO] Published 5500 events.
+2026-05-16 16:02:44,626 [INFO] Published 5600 events.
+2026-05-16 16:02:46,895 [INFO] Published 5700 events.
+2026-05-16 16:02:48,178 [INFO] Published 5800 events.
+2026-05-16 16:02:51,082 [INFO] Published 5900 events.
+2026-05-16 16:02:52,515 [INFO] Published 6000 events.
+2026-05-16 16:02:55,036 [INFO] Published 6100 events.
+2026-05-16 16:02:57,256 [INFO] Published 6200 events.
+2026-05-16 16:02:59,423 [INFO] Published 6300 events.
+2026-05-16 16:03:01,603 [INFO] Published 6400 events.
+2026-05-16 16:03:04,260 [INFO] Published 6500 events.
+2026-05-16 16:03:06,230 [INFO] Published 6600 events.
+2026-05-16 16:03:07,926 [INFO] Published 6700 events.
+2026-05-16 16:03:09,099 [INFO] Published 6800 events.
+2026-05-16 16:03:10,755 [INFO] Published 6900 events.
+2026-05-16 16:03:12,087 [INFO] Published 7000 events.
+2026-05-16 16:03:13,424 [INFO] Published 7100 events.
+2026-05-16 16:03:15,248 [INFO] Published 7200 events.
+2026-05-16 16:03:16,184 [INFO] Published 7300 events.
+2026-05-16 16:03:17,469 [INFO] Published 7400 events.
+2026-05-16 16:03:22,690 [INFO] Published 7500 events.
+2026-05-16 16:03:23,113 [INFO] Published 7600 events.
+2026-05-16 16:03:23,311 [INFO] Published 7700 events.
+2026-05-16 16:03:23,493 [INFO] Published 7800 events.
+2026-05-16 16:03:23,927 [INFO] Published 7900 events.
+2026-05-16 16:03:25,796 [INFO] Published 8000 events.
+2026-05-16 16:03:26,993 [INFO] Published 8100 events.
+2026-05-16 16:03:28,650 [INFO] Published 8200 events.
+2026-05-16 16:03:30,133 [INFO] Published 8300 events.
+2026-05-16 16:03:31,827 [INFO] Published 8400 events.
+2026-05-16 16:03:33,769 [INFO] Published 8500 events.
+2026-05-16 16:03:35,496 [INFO] Published 8600 events.
+2026-05-16 16:03:36,959 [INFO] Published 8700 events.
+2026-05-16 16:03:39,564 [INFO] Published 8800 events.
+2026-05-16 16:03:40,853 [INFO] Published 8900 events.
+2026-05-16 16:03:42,493 [INFO] Published 9000 events.
+2026-05-16 16:03:45,426 [INFO] Published 9100 events.
+2026-05-16 16:03:47,772 [INFO] Published 9200 events.
+2026-05-16 16:03:49,363 [INFO] Published 9300 events.
+2026-05-16 16:03:52,984 [INFO] Published 9400 events.
+2026-05-16 16:03:56,894 [INFO] Published 9500 events.
+2026-05-16 16:03:57,592 [INFO] Published 9600 events.
+2026-05-16 16:03:58,023 [INFO] Published 9700 events.
+2026-05-16 16:04:00,193 [INFO] Published 9800 events.
+2026-05-16 16:04:02,984 [INFO] Published 9900 events.
+2026-05-16 16:04:04,011 [INFO] Published 10000 events.
+2026-05-16 16:04:06,457 [INFO] Published 10100 events.
+2026-05-16 16:04:08,794 [INFO] Published 10200 events.
+2026-05-16 16:04:10,517 [INFO] Published 10300 events.
+2026-05-16 16:04:12,368 [INFO] Published 10400 events.
+2026-05-16 16:04:14,574 [INFO] Published 10500 events.
+2026-05-16 16:04:17,503 [INFO] Published 10600 events.
+2026-05-16 16:04:20,873 [INFO] Published 10700 events.
+2026-05-16 16:04:23,218 [INFO] Published 10800 events.
+2026-05-16 16:04:25,351 [INFO] Published 10900 events.
+2026-05-16 16:04:27,148 [INFO] Published 11000 events.
+2026-05-16 16:04:31,808 [INFO] Published 11100 events.
+2026-05-16 16:04:36,915 [INFO] Published 11200 events.
+2026-05-16 16:04:39,333 [INFO] Published 11300 events.
+2026-05-16 16:04:39,670 [INFO] Published 11400 events.
+2026-05-16 16:04:39,818 [INFO] Published 11500 events.
+2026-05-16 16:04:39,926 [INFO] Published 11600 events.
+2026-05-16 16:04:40,064 [INFO] Published 11700 events.
+2026-05-16 16:04:40,263 [INFO] Published 11800 events.
+2026-05-16 16:04:42,134 [INFO] Published 11900 events.
+2026-05-16 16:04:43,894 [INFO] Published 12000 events.
+2026-05-16 16:04:45,150 [INFO] Published 12100 events.
+2026-05-16 16:04:46,883 [INFO] Published 12200 events.
+2026-05-16 16:04:49,134 [INFO] Published 12300 events.
+2026-05-16 16:04:50,725 [INFO] Published 12400 events.
+2026-05-16 16:04:52,668 [INFO] Published 12500 events.
+2026-05-16 16:04:54,557 [INFO] Published 12600 events.
+2026-05-16 16:04:56,872 [INFO] Published 12700 events.
+2026-05-16 16:04:58,614 [INFO] Published 12800 events.
+2026-05-16 16:05:00,563 [INFO] Published 12900 events.
+2026-05-16 16:05:02,754 [INFO] Published 13000 events.
+2026-05-16 16:05:04,559 [INFO] Published 13100 events.
+2026-05-16 16:05:06,286 [INFO] Published 13200 events.
+2026-05-16 16:05:07,543 [INFO] Published 13300 events.
+2026-05-16 16:05:10,114 [INFO] Published 13400 events.
+2026-05-16 16:05:12,553 [INFO] Published 13500 events.
+2026-05-16 16:05:14,540 [INFO] Published 13600 events.
+2026-05-16 16:05:16,497 [INFO] Published 13700 events.
+2026-05-16 16:05:17,753 [INFO] Published 13800 events.
+2026-05-16 16:05:19,203 [INFO] Published 13900 events.
+2026-05-16 16:05:20,581 [INFO] Published 14000 events.
+2026-05-16 16:05:22,206 [INFO] Published 14100 events.
+2026-05-16 16:05:24,014 [INFO] Published 14200 events.
+2026-05-16 16:05:26,419 [INFO] Published 14300 events.
+2026-05-16 16:05:28,334 [INFO] Published 14400 events.
+2026-05-16 16:05:29,814 [INFO] Published 14500 events.
+2026-05-16 16:05:32,133 [INFO] Published 14600 events.
+2026-05-16 16:05:33,651 [INFO] Published 14700 events.
+2026-05-16 16:05:35,878 [INFO] Published 14800 events.
+2026-05-16 16:05:36,886 [INFO] Published 14900 events.
+2026-05-16 16:05:38,199 [INFO] Published 15000 events.
+2026-05-16 16:05:39,893 [INFO] Published 15100 events.
+2026-05-16 16:05:41,999 [INFO] Published 15200 events.
+2026-05-16 16:05:44,136 [INFO] Published 15300 events.
+2026-05-16 16:05:46,361 [INFO] Published 15400 events.
+2026-05-16 16:05:48,471 [INFO] Published 15500 events.
+2026-05-16 16:05:50,381 [INFO] Published 15600 events.
+2026-05-16 16:05:52,132 [INFO] Published 15700 events.
+2026-05-16 16:05:54,252 [INFO] Published 15800 events.
+2026-05-16 16:05:56,467 [INFO] Published 15900 events.
+2026-05-16 16:05:58,196 [INFO] Published 16000 events.
+2026-05-16 16:06:00,826 [INFO] Published 16100 events.
+2026-05-16 16:06:02,974 [INFO] Published 16200 events.
+2026-05-16 16:06:05,173 [INFO] Published 16300 events.
+2026-05-16 16:06:06,617 [INFO] Published 16400 events.
+2026-05-16 16:06:09,026 [INFO] Published 16500 events.
+2026-05-16 16:06:11,812 [INFO] Published 16600 events.
+2026-05-16 16:06:13,839 [INFO] Published 16700 events.
+2026-05-16 16:06:14,896 [INFO] Published 16800 events.
+2026-05-16 16:06:16,484 [INFO] Published 16900 events.
+2026-05-16 16:06:17,593 [INFO] Published 17000 events.
+2026-05-16 16:06:19,475 [INFO] Published 17100 events.
+2026-05-16 16:06:21,407 [INFO] Published 17200 events.
+2026-05-16 16:06:23,618 [INFO] Published 17300 events.
+2026-05-16 16:06:25,411 [INFO] Published 17400 events.
+2026-05-16 16:06:27,244 [INFO] Published 17500 events.
+2026-05-16 16:06:28,634 [INFO] Published 17600 events.
+2026-05-16 16:06:30,746 [INFO] Published 17700 events.
+2026-05-16 16:06:32,602 [INFO] Published 17800 events.
+2026-05-16 16:06:34,060 [INFO] Published 17900 events.
+2026-05-16 16:06:36,032 [INFO] Published 18000 events.
+2026-05-16 16:06:37,335 [INFO] Published 18100 events.
+2026-05-16 16:06:39,321 [INFO] Published 18200 events.
+2026-05-16 16:06:41,380 [INFO] Published 18300 events.
+2026-05-16 16:06:43,528 [INFO] Shutting down — flushing producer.
+2026-05-16 16:06:43,528 [INFO] <KafkaProducer client_id=kafka-python-producer-1 transactional_id=None>: Closing the Kafka producer with 4294967.0 secs timeout.
+2026-05-16 16:06:43,528 [INFO] <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=host.docker.internal:9092 <connected> [IPv4 ('192.168.1.5', 9092)]>: Closing connection. 
