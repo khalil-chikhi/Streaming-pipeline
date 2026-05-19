@@ -1,0 +1,10 @@
+kafka-python 
+requests 
+sseclient-py
+pyspark
+delta-spark==3.2.0
+dbt-duckdb 
+duckdb
+prefect==2.14.20
+dbt-databricks
+databricks-sdk
