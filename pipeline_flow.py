@@ -1,16 +1,19 @@
 import subprocess
-# import os
+import os
+from dotenv import load_dotenv
 import time
 from pathlib import Path
 from prefect import flow, task, get_run_logger
 from databricks.sdk import WorkspaceClient
 from databricks.sdk.service.jobs import RunLifeCycleState
 
+load_dotenv()
 DBT_PROJECT_DIR = Path(__file__).parent / "wikimedia_dbt"
 
-DATABRICKS_HOST = "dbc-16c19e93-6368.cloud.databricks.com"
-***REMOVED***
-DATABRICKS_JOB_NAME = "wikimedia-kafka-ingestion"
+
+DATABRICKS_HOST = os.environ["DATABRICKS_HOST"]
+DATABRICKS_TOKEN = os.environ["DATABRICKS_TOKEN"]
+DATABRICKS_JOB_NAME = os.environ["DATABRICKS_JOB_NAME"]
 
 @task(name="trigger-databricks-job", retries=2, retry_delay_seconds=30)
 def trigger_databricks_job() -> int:
